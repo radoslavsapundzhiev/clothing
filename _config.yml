@@ -1,27 +1,26 @@
-
 # Site settings
+
 title: Clothing
+description: This is the best place to find everything for clothing you need. 
+
 email: radoslavsapundzhiev@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  This is the best place to find everything for clothing you need.
 baseurl: "/clothing" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+destination: "docs"
 
 twitter_username: radoslavsapundzhiev
-github_username:  radoslavsapundzhiev
+github_username: radoslavsapundzhiev
 
+future: true
 markdown: kramdown
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - gulpfile.js
+  - docs
+  - node_modules
+  - scss

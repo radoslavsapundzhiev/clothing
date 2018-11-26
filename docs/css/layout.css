@@ -1,8 +1,0 @@
-.site {
-    padding: var(--spacin-site, 2em);
-}
-
-.site-content {
-    max-width: 60rem;
-    margin: 0 auto;
-}

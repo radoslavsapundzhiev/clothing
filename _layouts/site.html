@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{site.title}}</title>
-    <link rel="stylesheet" href="{{site.baseurl}}/css/styles.css">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
 </head>
 
 <body>
@@ -15,18 +15,16 @@
         <header class="site-header">
             <div class="site-branding">
                 <p class="site-title">
-                    {{site.title}}
+                    {{ site.title }}
                 </p>
-                <p class="site-description">
-                    {{site.description}}
-                </p>
+                <p class="site-description">{{site.description}}</p>
             </div>
             <label id="nav-toggle" class="fas" for="nav-main-toggle"><span>Menu</span></label>
             <nav class="navigation main">
                 <ul>
-                    <li><a class="fas fa-tshirt" href="{{site.baseurl}}/">Home</a></li>
-                    <li><a class="fas fa-user" href="{{site.baseurl}}/about/">About</a></li>
-                    <li><a class="fas fa-envelope" href="{{site.baseurl}}/contacts/">Contacts</a></li>
+                    <li><a class="fas fa-tshirt" href="{{ site.baseurl }}/">Home</a></li>
+                    <li><a class="fas fa-user" href="{{ site.baseurl }}/about/">About</a></li>
+                    <li><a class="fas fa-envelope" href="{{ site.baseurl }}/contacts/">Contacts</a></li>
                 </ul>
             </nav>
         </header>
