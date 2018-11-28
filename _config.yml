@@ -1,7 +1,7 @@
 # Site settings
 
-title: Clothing
-description: This is the best place to find everything for clothing you need. 
+title: Ris build Ltd
+description: Full service building company. 
 
 email: radoslavsapundzhiev@gmail.com
 baseurl: "/clothing" # the subpath of your site, e.g. /blog
