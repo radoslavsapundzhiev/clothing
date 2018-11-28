@@ -62,6 +62,7 @@
 
 #nav-main-toggle:checked + .site-header .navigation {
     display: flex;
+    z-index: 1000;
 }
 
 #nav-main-toggle:checked + .site-header #nav-toggle:before {

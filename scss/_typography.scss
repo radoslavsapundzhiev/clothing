@@ -23,6 +23,12 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 0.5em;
 }
 
+$headings: (h1: 2.441em, h2: 1.953em, h3: 1.563em, h5: 1em, h6: 1em);
+
+@each $heading, $size in $headings {
+	#{$heading} { font-size: $size; }
+}
+
 h1 {font-size: 2.441em}
 h2 {font-size: 1.953em}
 h3 {font-size: 1.563em}
