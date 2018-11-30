@@ -11,8 +11,8 @@
 
 <body>
     <div class="site">
-        <input type="checkbox" name="nav-main-toggle" id="nav-main-toggle">
-        <header class="site-header">
+        <!-- <input type="checkbox" name="nav-main-toggle" id="nav-main-toggle"> -->
+        <!-- <header class="site-header">
             <div class="site-branding">
                 <p class="site-title">
                     {{ site.title }}
@@ -28,6 +28,23 @@
                     <li><a class="fas fa-envelope" href="{{ site.baseurl }}/contacts/">Contacts</a></li>
                 </ul>
             </nav>
+        </header> -->
+        <input type="checkbox" name="main-nav-toggle" id="main-nav-toggle" checked />
+        <header>
+            <div class="site-branding">
+                <p class="site-title">{{ site.title }}</p>
+                <p class="site-description">{{site.description}}</p>
+            </div>
+            <label for="main-nav-toggle" id="toggle">Menu</label>
+            <nav class="main">
+                <ul>
+                    <li><a class="fas fa-home" href="{{ site.baseurl }}/">Home</a></li>
+                    <li><a class="fas fa-user" href="{{ site.baseurl }}/about/">About</a></li>
+                    <li><a class="fas fa-hammer" href="{{ site.baseurl }}/services/">Services</a></li>
+                    <li><a class="fas fa-history" href="{{ site.baseurl }}/history/">History</a></li>
+                    <li><a class="fas fa-envelope" href="{{ site.baseurl }}/contacts/">Contacts</a></li>
+                </ul>
+            </nav>
         </header>
         <main class="site-content">
             {{content}}
@@ -38,7 +55,7 @@
 
         </main>
         <footer class="site-footer">
-
+            Ris Build Ltd &copy; All rights reserved!
         </footer>
     </div>
 

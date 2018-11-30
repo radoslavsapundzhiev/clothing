@@ -3,14 +3,15 @@ layout: site
 ---
 
 <!-- <h2 class="fas fa-envelope">index.html</h2> -->
-
+<h1>Projects</h1>
 <ul class="listing posts">
 	{% for post in site.posts %}
 	<li>
-		<a href="{{ site.baseurl }}{{ post.url }}">
+		<a class="fas-fa-building" href="{{ site.baseurl }}{{ post.url }}">
 			<span class="title">{{ post.title }}</span>
-			<span class="date">{{ post.date | date_to_string }}</span>
+			<span>{{ post.location }}</span>
 		</a>
 	</li>
 	{% endfor %}
 </ul>
+

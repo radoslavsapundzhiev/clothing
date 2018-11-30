@@ -5,12 +5,13 @@ body {
 .site-branding {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     position: fixed;
     width: 100%;
     top: 0; left: 0;
     background: linear-gradient(to bottom, rgba(255,255,255,1) 60%,rgba(255,255,255,0) 100%);
-    padding: var(--spacing-site);
+    padding-left: var(--spacing-site);
+    padding-right: var(--spacing-site);
     padding-bottom: 4rem;
 }
 
@@ -26,4 +27,11 @@ body {
     font-style: italic;
     font-family: serif;
     font-size: 110%;
+}
+
+@media screen and (max-width: 800px) {
+    .site-branding {
+        align-items: center;
+        padding-left: 0;
+    }
 }
