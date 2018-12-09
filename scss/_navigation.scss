@@ -74,6 +74,7 @@ nav.main {
     align-self: center;
     padding-top: 1em;
     //padding-left: var(--spacing-site);
+    padding-right: var(--spacing-site);
 }
 
 nav.main ul {
@@ -170,6 +171,7 @@ nav.main ul li:hover>a {
         display: none;
         border-top: 2px solid #000;
         padding-top: 0;
+        padding-right: 0;
     }
 
     nav.main ul li:not(:first-child) {
